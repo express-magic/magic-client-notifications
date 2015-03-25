@@ -1,7 +1,5 @@
-import utils from 'magic-client-utils';
+import dom from 'magic-client-dom';
 import is from 'is';
-
-var dom = utils.dom;
 
 /* 
  * show a success
