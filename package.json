@@ -1,0 +1,30 @@
+{
+  "name": "magic-client-notifications",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "setup": "bin/install",
+    "clean": "bin/clean",
+    "prepub": "bin/build",
+    "release": "bin/release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/express-magic/magic-client-notifications"
+  },
+  "bugs": {
+    "url": "https://github.com/express-magic/magic-client-notifications/issues"
+  },
+  "homepage": "https://github.com/express-magic/magic-client-notifications",
+  "dependencies": {
+    "is": "^3.0.1",
+    "magic-client-utils": "git://github.com/express-magic/magic-client-utils"
+  },
+  "devDependencies": {
+    "babelify": "^5.0.4",
+    "browserify": "^9.0.3"
+  }
+}
