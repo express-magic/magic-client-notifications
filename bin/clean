@@ -6,4 +6,5 @@ su root -c 'echo "delete node_modules and index.js"'
 
 rm -rf \
   ./node_modules \
-  ./index.js
+  ./index.js \
+;
