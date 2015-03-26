@@ -1,5 +1,5 @@
 import dom from 'magic-client-dom';
-import is from 'is';
+import {string, fn} from 'is';
 
 /* 
  * show a success
@@ -44,11 +44,11 @@ export function showNotice(cssId, text) {
  */
 
 export function getNoticeParentEle(selector) {
-  var selector = is.string(selector) ? selector.replace('#', '') : false
+  var selector = string(selector) ? selector.replace('#', '') : false
     , sel = selector || 'notice-parent'
     , ele = document.querySelector('#' + sel)
   ;
-  if ( ! ele || ! is.fn(ele.setAttribute) ) {
+  if ( ! ele || ! fn(ele.setAttribute) ) {
     ele = dom.create('div');
     ele.setAttribute('id', selector);
     dom.prepend(document.body, ele);
@@ -64,7 +64,7 @@ export function getNoticeEle(cssId, val) {
   var par = getNoticeParentEle()
     , ele = document.querySelector('#' + cssId)
   ;
-  if ( ! ele || ! isFunc(ele.getAttribute) ) {
+  if ( ! ele || ! fn(ele.getAttribute) ) {
     ele = document.createElement('div');
     dom.id(ele, cssId);
     dom.class(ele, 'notice');
