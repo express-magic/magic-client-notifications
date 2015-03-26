@@ -1,9 +1,9 @@
 {
   "name": "magic-client-notifications",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
-  "license": "ISC",
+  "description": "shows client side notifications",
+  "author": "Jascha Ehrenreich <jascha@jaeh.at>",
+  "license": "AGPL",
   "main": "index.js",
   "scripts": {
     "setup": "bin/install",
